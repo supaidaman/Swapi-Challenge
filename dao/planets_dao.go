@@ -35,7 +35,7 @@ func (m *PlanetsDAO) Connect() {
 	db = session.DB(m.Database)
 }
 
-//FindFilmsByPlanet Retrieves Planet By Name
+//FindFilmsByPlanet Retrieves Films for a planet.
 func FindFilmsByPlanet(name string) ([]swapi.FilmURL, error) {
 
 	res, getErr := http.Get(fmt.Sprintf("https://swapi.co/api/planets/?search=%s", name))
