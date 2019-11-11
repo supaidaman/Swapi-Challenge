@@ -9,11 +9,14 @@ FORMATOS DAS URLS
 	/api/v1/planets -> Insere novo planeta (POST)
 
 	/api/v1/planets/{id} -> Atualiza planeta (POST)
-    
+
 	/api/v1/planets/{id} -> Deleta planeta("DELETE")
 
 
-    Todas as dependencias estão no repositório já.
+    Dependências:
+    go get github.com/gorilla/mux
+    go get go.mongodb.org/mongo-driver/mongo
+    go get -u github.com/peterhellberg/swapi
 
     Exemplo de json no postman para inserir novo planeta: 
     { "name":"Hoth",
